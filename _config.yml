@@ -1,0 +1,149 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title               : "Home"
+title_separator     : "-"
+name                : "Michel M. Silva"
+description         : >- # this means to ignore newlines until "baseurl:"
+  "Michel Melo da Silva Homepage contains personal and research info."
+baseurl             : #"/~michelms" # the subpath of your site, e.g. /blog
+url                 : #"www.dcc.ufmg.br" # the base hostname & protocol for your site, e.g. http://example.com
+#email              : michelms@dcc.ufmg.br
+#twitter_username   : 
+#github_username    :  michelmelosilva
+
+locale              : "en-US"
+permalink           : /:categories/:title/
+
+# Site Author
+author:
+  name             : "Michel M. Silva"
+  avatar           : "/assets/images/FotoMichel.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Assistant Professor <br> Researcher "
+  location         : "UFV, Brazil"
+  email            : "michelms@dcc.ufmg.br"
+  uri              :
+  bitbucket        : "michelsilva/"
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         : "michel.silva66"
+  foursquare       :
+  github           : "michelmelosilva"
+  # google_plus      : "100826882127118586042"
+  google_scholar   : "p2bkakQAAAAJ"
+  keybase          :
+  instagram        :
+  lastfm           :
+  # linkedin         : "michel-melo-da-silva-692575101"
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : 
+  steam            :
+  tumblr           :
+  twitter          : 
+  vine             :
+  weibo            :
+  xing             :
+  youtube          : "UCA4uolsIJ9nuqL3a13ok4MQ"
+  research_gate    : "Michel_Silva10"
+  lattes           : "2312146508617497"
+
+# Build settings
+markdown: kramdown
+theme: minimal-mistakes-jekyll
+
+minimal_mistakes_skin: "default" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .idea
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+
+# HTML Compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# Outputting
+permalink: /:categories/:title/
+#paginate: 5 # amount of posts to show
+#paginate_path: /page:num/
+timezone: America/Sao_Paulo # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Defaults
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: false
+      related: false

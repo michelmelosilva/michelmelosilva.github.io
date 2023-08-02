@@ -1,0 +1,12 @@
+# main links
+main:
+  - title: "Publications"
+    url: /publications.html
+  - title: "Codes"
+    url: /codes.html
+  - title: "Research"
+    url: /research.html
+  - title: "Curriculum"
+    url: /curriculum.html
+  - title: "Bio"
+    url: /bio.html
