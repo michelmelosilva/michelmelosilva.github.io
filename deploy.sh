@@ -2,9 +2,9 @@
 
 echo "Replacing urls..."
 
-sed -i 's/http:\/\/localhost:4000/./' _site/*.html
-sed -i 's/<a href=".\/">Home<\/a>/<a href=".\/index.html">Home<\/a>/' _site/*.html
-sed -i 's/\.\.\/assets/\.\/assets/' _site/*.html
+sed -i 's/http:\/\/localhost:4000/./' *.html
+sed -i 's/<a href=".\/">Home<\/a>/<a href=".\/index.html">Home<\/a>/' *.html
+sed -i 's/\.\.\/assets/\.\/assets/' *.html
 
 echo "Finish."
 
